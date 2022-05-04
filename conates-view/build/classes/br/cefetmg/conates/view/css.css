@@ -1,0 +1,62 @@
+.titulo-conates{
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.ajuda-botoes-usuario{
+    -fx-text-fill: #b03060;
+    -fx-background-color: transparent;
+    
+}
+.barra-superior{
+    -fx-background-color:  #B03060;
+}
+.barra-inferior{
+    -fx-background-color:  transparent;
+}
+.barra-inferior-font{
+    -fx-background-color: transparent;
+    
+    -fx-text-fill:  #B03060;
+}
+.ajuda-botao-voltar{
+    -fx-border-radius: 60;
+    -fx-border-color:  #B03060;
+    -fx-background-color:  transparent;
+    
+}
+.sobre-titulo{
+    -fx-font-size: 20;
+}
+.recepcionista-barra-lateral{
+    -fx-background-color:  #ffe7e5;
+}
+.recepcionista-barra-lateral-botoes{
+    -fx-background-color:  #ffe7e5;
+    -fx-font-size: 15px;
+    -fx-text-fill: #804a62;
+    -fx-font-weight: bold;
+}
+
+.separador{
+    -fx-background-color: #663D3D;
+}
+.campos-obrigatorio{
+    -fx-text-fill: red;
+    -fx-font-size: 12px;
+}
+.cadastroconsultas-botao{
+    -fx-background-color: #ffe7e5;
+    -fx-border-radius: 50;
+    -fx-font-size: 15px;
+    -fx-text-fill: #804a62;
+    -fx-font-weight: bold;
+
+}
+.cadastroconsultas-botao-concluir{
+    -fx-background-color: #d86689;
+    -fx-border-radius: 50;
+    -fx-font-size: 13px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+}

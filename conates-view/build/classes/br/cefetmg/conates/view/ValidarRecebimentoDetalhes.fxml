@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="761.0" prefWidth="1392.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cefetmg.conates.controller.ValidarRecebimentoDetalhesController">
+    <stylesheets>
+        <URL value="@css.css" />
+    </stylesheets>
+   <children>
+      <HBox prefHeight="73.0" prefWidth="1392.0" styleClass="barra-superior">
+         <children>
+            <Pane prefHeight="44.0" prefWidth="211.0" />
+            <Label contentDisplay="RIGHT" prefHeight="79.0" prefWidth="239.0" style="-fx-font-weight: bold; -fx-text-fill: white;" text="CONATES" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Castellar" size="33.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="73.0" prefWidth="942.0" styleClass="titulo-conates">
+               <children>
+                  <Button fx:id="btnsair" layoutX="714.0" layoutY="15.0" mnemonicParsing="false" onAction="#sair" prefHeight="37.0" prefWidth="132.0" style="-fx-background-color: TRANSPARENT; -fx-font-size: 15;" text="SAIR" textFill="WHITE" />
+                  <Label fx:id="lbluser" layoutX="521.0" layoutY="8.0" prefHeight="54.0" prefWidth="203.0" style="-fx-font-weight: bold; -fx-font-size: 17;" text="Olá, FARMACEUTICO(A)!" textFill="#fffdfd" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label layoutX="660.0" layoutY="123.0" prefHeight="30.0" prefWidth="217.0" style="-fx-font-size: 20;" text="Validar Recebimento" textAlignment="CENTER">
+         <font>
+            <Font name="Penna" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="198.0" layoutY="665.0" prefHeight="39.0" prefWidth="1188.0" styleClass="barra-inferior">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="13.0" />
+            <Button fx:id="btnsobre" mnemonicParsing="false" onAction="#sobre" prefHeight="39.0" prefWidth="154.0" styleClass="barra-inferior-font" text="SOBRE">
+               <font>
+                  <Font name="Penna" size="18.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="39.0" prefWidth="16.0" />
+            <Button fx:id="btnajuda" mnemonicParsing="false" onAction="#ajuda" prefHeight="39.0" prefWidth="154.0" styleClass="barra-inferior-font" text="AJUDA">
+               <font>
+                  <Font name="Penna" size="18.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <Pane layoutX="2.0" layoutY="80.0" prefHeight="627.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral">
+         <children>
+            <Button fx:id="btnestoque" layoutY="-5.0" mnemonicParsing="false" onAction="#estoque" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Estoque" />
+            <Button fx:id="btncadmedicamento" layoutY="79.0" mnemonicParsing="false" onAction="#cadastrarMedicamento" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Cadastrar &#10;medicamento" textAlignment="CENTER" />
+            <Button fx:id="btncontfornecimento" layoutY="166.0" mnemonicParsing="false" onAction="#controleFornecimento" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Controle de&#10;fornecimento&#10;" textAlignment="CENTER" />
+            <Button fx:id="btngerarelatorio" layoutY="251.0" mnemonicParsing="false" onAction="" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Gerar &#10;Relatório" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Separator layoutX="625.0" layoutY="152.0" prefHeight="3.0" prefWidth="241.0" />
+      <Label layoutX="412.0" layoutY="253.0" style="-fx-font-size: 15;" text="Código da solicitação" />
+      <Label layoutX="412.0" layoutY="319.0" text="Data da entrega" />
+      <Label layoutX="801.0" layoutY="319.0" text="Horário da entrega" />
+      <Label layoutX="412.0" layoutY="372.0" text="Observação" />
+      <TextArea fx:id="taobservacao" layoutX="514.0" layoutY="369.0" prefHeight="89.0" prefWidth="241.0" />
+      <Button fx:id="btnsalvar" layoutX="698.0" layoutY="541.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="101.0" styleClass="cadastroconsultas-botao-concluir" text="Salvar" />
+      <TextField fx:id="tfdatentrega" layoutX="547.0" layoutY="315.0" />
+      <TextField fx:id="tfhorentrega" layoutX="937.0" layoutY="315.0" />
+      <Label layoutX="352.0" layoutY="205.0" styleClass="campos-obrigatorio" text="* Campos obrigatórios" />
+      <Label layoutX="398.0" layoutY="319.0" styleClass="campos-obrigatorio" text="*" />
+   </children>
+</AnchorPane>

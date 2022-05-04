@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="761.0" prefWidth="1392.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cefetmg.conates.controller.CadastroMedicamentoController">
+    <stylesheets>
+        <URL value="@css.css" />
+    </stylesheets>
+   <children>
+      <HBox prefHeight="73.0" prefWidth="1392.0" styleClass="barra-superior">
+         <children>
+            <Pane prefHeight="44.0" prefWidth="211.0" />
+            <Label contentDisplay="RIGHT" prefHeight="79.0" prefWidth="239.0" style="-fx-font-weight: bold; -fx-text-fill: white;" text="CONATES" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Castellar" size="33.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="73.0" prefWidth="942.0">
+               <children>
+                  <Button fx:id="btnsair" layoutX="714.0" layoutY="15.0" mnemonicParsing="false" onAction="#sair" prefHeight="37.0" prefWidth="132.0" style="-fx-background-color: TRANSPARENT; -fx-font-size: 15;" text="SAIR" textFill="WHITE" />
+                  <Label fx:id="lbluser" layoutX="521.0" layoutY="8.0" prefHeight="54.0" prefWidth="203.0" style="-fx-font-weight: bold; -fx-font-size: 17;" text="Olá, FARMACEUTICO(A)!" textFill="#fffdfd" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label layoutX="675.0" layoutY="123.0" style="-fx-font-size: 20;" text="Cadastro de Medicamento">
+         <font>
+            <Font name="Penna" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="198.0" layoutY="714.0" prefHeight="39.0" prefWidth="1188.0" styleClass="barra-inferior">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="13.0" />
+            <Button fx:id="btnsobre" mnemonicParsing="false" onAction="#sobre" prefHeight="39.0" prefWidth="154.0" styleClass="barra-inferior-font" text="SOBRE">
+               <font>
+                  <Font name="Penna" size="18.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="39.0" prefWidth="16.0" />
+            <Button fx:id="btnajuda" mnemonicParsing="false" onAction="#ajuda" prefHeight="39.0" prefWidth="154.0" styleClass="barra-inferior-font" text="AJUDA">
+               <font>
+                  <Font name="Penna" size="18.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <Pane layoutX="2.0" layoutY="80.0" prefHeight="627.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral">
+         <children>
+            <Button fx:id="btnestoque" layoutY="-5.0" mnemonicParsing="false" onAction="#estoque" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Estoque" />
+            <Button fx:id="btncadamedicamento" layoutY="79.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Cadastrar &#10;medicamento" textAlignment="CENTER" />
+            <Button fx:id="btnconfornecimento" layoutY="176.0" mnemonicParsing="false" onAction="#controleFornecimento" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Controle de&#10;fornecimento&#10;" textAlignment="CENTER" />
+            <Button fx:id="btngerarelatorio" layoutY="264.0" mnemonicParsing="false" onAction="#gerarRelatorio" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="Gerar &#10;Relatório" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Button fx:id="btncadastra" layoutX="940.0" layoutY="548.0" mnemonicParsing="false" onAction="#cadastrarMedicamentos" prefHeight="39.0" prefWidth="105.0" styleClass="cadastroconsultas-botao-concluir" text="Cadastrar" />
+      <TextField fx:id="tfqtd" layoutX="918.0" layoutY="304.0" />
+      <Label layoutX="833.0" layoutY="308.0" text="Quantidade" />
+      <Label layoutX="833.0" layoutY="252.0" text="Categoria" />
+      <TextField fx:id="tfcodmed" layoutX="509.0" layoutY="305.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="tfnomemedi" layoutX="510.0" layoutY="247.0" prefHeight="25.0" prefWidth="239.0" />
+      <Label layoutX="369.0" layoutY="465.0" text="Imagem" />
+      <Label layoutX="374.0" layoutY="309.0" prefHeight="25.0" prefWidth="132.0" text="Cód. do Medicamento" />
+      <Label layoutX="374.0" layoutY="251.0" text="Nome" />
+      <Separator layoutX="662.0" layoutY="153.0" prefHeight="2.0" prefWidth="260.0" />
+      <Label layoutX="833.0" layoutY="363.0" text="Validade" />
+      <Button fx:id="btnarquivo" layoutX="506.0" layoutY="461.0" mnemonicParsing="false" onAction="#imagem" style="-fx-font-size: 12;" styleClass="cadastroconsultas-botao" text="Escolher arquivo" />
+      <TextArea fx:id="tavalidade" layoutX="918.0" layoutY="361.0" onKeyPressed="#formatarData" prefHeight="25.0" prefWidth="149.0" promptText="dd/mm/aa" />
+      <Label layoutX="314.0" layoutY="195.0" styleClass="campos-obrigatorio" text="* Campos obrigatórios" />
+      <Label layoutX="360.0" layoutY="252.0" styleClass="campos-obrigatorio" text="*" />
+      <Label layoutX="374.0" layoutY="363.0" prefHeight="17.0" prefWidth="132.0" text="Lote do Fornecimento" />
+      <TextField fx:id="tfcodlote" layoutX="506.0" layoutY="359.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="360.0" layoutY="309.0" styleClass="campos-obrigatorio" text="*" />
+      <Label layoutX="360.0" layoutY="363.0" styleClass="campos-obrigatorio" text="*" />
+      <Label layoutX="818.0" layoutY="251.0" styleClass="campos-obrigatorio" text="*" />
+      <Label layoutX="818.0" layoutY="363.0" styleClass="campos-obrigatorio" text="*" />
+      <Label layoutX="818.0" layoutY="309.0" styleClass="campos-obrigatorio" text="*" />
+      <MenuButton fx:id="mbcategoria" layoutX="918.0" layoutY="248.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="149.0" text="SELECIONE" />
+      <TextArea fx:id="tadat" layoutX="918.0" layoutY="414.0" onKeyPressed="#formatarData" prefHeight="38.0" prefWidth="149.0" promptText="dd/mm/aa" />
+      <MenuButton fx:id="mbfornecedor" layoutX="506.0" layoutY="408.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="149.0" text="SELECIONE" />
+      <Label layoutX="374.0" layoutY="415.0" prefHeight="17.0" prefWidth="132.0" text="Fornecedor" />
+      <Label layoutX="360.0" layoutY="415.0" styleClass="campos-obrigatorio" text="*" />
+      <Label layoutX="833.0" layoutY="415.0" text="Data" />
+      <Label layoutX="818.0" layoutY="415.0" prefWidth="6.0" styleClass="campos-obrigatorio" text="*" />
+      <VBox fx:id="vbimagem" layoutX="487.0" layoutY="508.0" prefHeight="157.0" prefWidth="162.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

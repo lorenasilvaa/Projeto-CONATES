@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="1392.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cefetmg.conates.controller.PesquisarConsultaController">
+    <stylesheets>
+        <URL value="@css.css" />
+    </stylesheets>
+   <children>
+      <HBox prefHeight="73.0" prefWidth="1392.0" styleClass="barra-superior">
+         <children>
+            <Pane prefHeight="44.0" prefWidth="211.0" />
+            <Label contentDisplay="RIGHT" prefHeight="79.0" prefWidth="239.0" style="-fx-font-weight: bold; -fx-text-fill: white;" text="CONATES" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Castellar" size="33.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="73.0" prefWidth="940.0">
+               <children>
+                  <Label fx:id="lbluser" layoutX="470.0" layoutY="27.0" prefHeight="21.0" prefWidth="177.0" style="-fx-font-weight: bold; -fx-font-size: 17;" text="Olá, RECEPCIONISTA!" textFill="#fffdfd" />
+                  <Button fx:id="btnsair" layoutX="708.0" layoutY="25.0" mnemonicParsing="false" onAction="#sair" prefHeight="29.0" prefWidth="51.0" style="-fx-background-color: TRANSPARENT; -fx-font-size: 15;" text="SAIR" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Label layoutX="730.0" layoutY="113.0" prefHeight="32.0" prefWidth="90.0" style="-fx-font-size: 20;" text="Consultas">
+         <font>
+            <Font name="Penna" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="198.0" layoutY="664.0" prefHeight="41.0" prefWidth="1188.0" styleClass="barra-inferior">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="13.0" />
+            <Button fx:id="btnsobre" mnemonicParsing="false" onAction="#sobre" prefHeight="39.0" prefWidth="154.0" styleClass="barra-inferior-font" text="SOBRE">
+               <font>
+                  <Font name="Penna" size="18.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="39.0" prefWidth="16.0" />
+            <Button fx:id="btnajuda" mnemonicParsing="false" onAction="#ajuda" prefHeight="39.0" prefWidth="154.0" styleClass="barra-inferior-font" text="AJUDA">
+               <font>
+                  <Font name="Penna" size="18.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <Pane layoutX="2.0" layoutY="80.0" prefHeight="627.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral">
+         <children>
+            <Button fx:id="btnVoltar" layoutY="-5.0" mnemonicParsing="false" onAction="#voltarPesquisa" prefHeight="73.0" prefWidth="200.0" styleClass="recepcionista-barra-lateral-botoes" text="&lt;- Sair da Pesquisa" />
+         </children>
+      </Pane>
+      
+      <TableView fx:id="tbconsulta" editable="false" layoutX="230.0" layoutY="245.0" prefHeight="346.0" prefWidth="1082.0">
+        
+      </TableView>
+      <Separator layoutX="715.0" layoutY="144.0" prefHeight="1.0" prefWidth="120.0" />
+      <Label fx:id="lbnome" layoutX="576.0" layoutY="193.0" prefHeight="26.0" prefWidth="342.0" text="" />
+   </children>
+</AnchorPane>

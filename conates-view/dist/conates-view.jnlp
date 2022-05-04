@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="conates-view.jnlp">
+  <information>
+    <title>conates-view</title>
+    <vendor>Usuario</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="conates-view.jar" size="140142" download="eager" />
+    <jar href="lib/conates-core.jar" size="158421" download="eager" />
+    <jar href="lib/postgresql-9.2-1002.jdbc4.jar" size="576248" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="conates-view" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="br.cefetmg.conates.Conates"  name="conates-view" />
+  <update check="always"/>
+</jnlp>

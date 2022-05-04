@@ -1,0 +1,14 @@
+Senhas
+
+Recepcionista
+Codigo do usuario - 201411101
+Senha - 123456
+
+
+Farmacêutico
+Codigo do usuario - 201411120
+Senha - 54123
+
+Enfermeiro
+Codigo do usuario - 201411130
+senha - 147258

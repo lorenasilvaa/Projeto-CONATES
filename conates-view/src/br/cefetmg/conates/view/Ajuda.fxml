@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="707.0" prefWidth="1388.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cefetmg.conates.controller.AjudaController">
+   <stylesheets>
+        <URL value="@css.css" />
+    </stylesheets>
+    <children>
+      <HBox prefHeight="73.0" prefWidth="1398.0" styleClass="barra-superior">
+         <children>
+            <Pane prefHeight="44.0" prefWidth="211.0" />
+            <Label contentDisplay="RIGHT" prefHeight="79.0" prefWidth="239.0" styleClass="titulo-conates" text="CONATES" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Castellar" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="682.0" layoutY="176.0" style="-fx-font-size: 26;" text="Ajuda">
+         <font>
+            <Font name="Baskerville Old Face" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="-2.0" layoutY="664.0" prefHeight="37.0" prefWidth="1396.0" styleClass="barra-inferior">
+      </HBox>
+      <TextArea fx:id="taAjuda" editable="false" layoutX="398.0" layoutY="282.0" prefHeight="300.0" prefWidth="746.0" style="-fx-background-color: #F8F8FF; -fx-border-radius: 30;" text=" Selecione uma categoria ao lado...">
+         </TextArea>
+      <Button fx:id="btnrecepcionista" layoutX="200.0" layoutY="269.0" mnemonicParsing="false" onAction="#msgAjudaRecepcionista" styleClass="ajuda-botoes-usuario" text="RECEPCIONISTA" textFill="#b03060" />
+      <Button fx:id="btnenfermeiro" layoutX="200.0" layoutY="390.0" mnemonicParsing="false" onAction="#msgAjudaEnfermeiro" styleClass="ajuda-botoes-usuario" text="ENFERMEIRO   " textFill="#b03060" />
+      <Button fx:id="btnfarmaceutico" layoutX="200.0" layoutY="511.0" mnemonicParsing="false" onAction="#msgAjudaFarmaceutico" styleClass="ajuda-botoes-usuario" text="FARMACEUTICO " textFill="#b03060" />
+      <Separator layoutX="660.0" layoutY="212.0" prefHeight="4.0" prefWidth="111.0" />
+      <Button layoutX="676.0" layoutY="586.0" mnemonicParsing="false" onAction="#voltar" prefHeight="29.0" prefWidth="82.0" styleClass="cadastroconsultas-botao-concluir" text="Voltar" />
+   </children>
+</AnchorPane>
